@@ -1,0 +1,35 @@
+body{
+  position: relative;
+
+}
+.my-header{
+  color:#3e5aff;
+}
+#my-section{
+  border: 5px dotted darkorange;
+
+}
+.myHeader2{
+  color: red;
+}
+
+* {
+  color: green;
+}
+
+p > strong,
+h2 strong {
+  color: rgb(255, 0, 255);
+}
+
+p.featured:before {
+  content: open-quote;
+}
+
+a[href*="edu"] {
+  text-decoration: overline;
+}
+
+#headline {
+  margin: 0px 10px;
+}
