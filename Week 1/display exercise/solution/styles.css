@@ -44,3 +44,6 @@ section{
   padding: 10px;
 
 }
+nav li:not(:first-child) {
+  background-color: orange;
+}
