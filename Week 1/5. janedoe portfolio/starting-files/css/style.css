@@ -1,0 +1,67 @@
+/* General Content
+–––––––––––––––––––––––––––––––––––––––––––––– */
+/* Add color variables to root
+–––––––––––––––––––––––––––––––––––––––––––––– */
+:root {
+  --main-accent-color: #aad260;
+  --dark-accent-color: #12330a;
+  --light-accent-color: #dff6e8;
+  font-size: 16px;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.colored {
+  background-color: var(--main-accent-color);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Typography - here you can add fonts and use color variable in color property.
+–––––––––––––––––––––––––––––––––––––––––––––– */
+body {
+  font-size: 16px;
+}
+h2 {
+}
+
+/* Header & Navigation
+–––––––––––––––––––––––––––––––––––––––––––––– */
+/* navigation */
+
+
+/* Images & Media
+–––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/* About
+–––––––––––––––––––––––––––––––––––––––––––––– */
+/* */
+
+/* Gallery
+–––––––––––––––––––––––––––––––––––––––––––––– */
+.portfolio a {
+  display: block;
+  transition: 0.4s ease-in-out all;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  padding-bottom: 80%;
+  position: relative;
+  border: transparent 3px solid;
+}
+/* */
+
+
+/* Social
+–––––––––––––––––––––––––––––––––––––––––––––– */
+
