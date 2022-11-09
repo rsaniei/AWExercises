@@ -1,9 +1,9 @@
+/* Brose google fonts and select your favorite font */
+/* Here we chose this one: https: //fonts.google.com/specimen/Xanh+Mono */
 @import url('https://fonts.googleapis.com/css2?family=Xanh+Mono:ital@1&display=swap');
-
-
 body{
   margin: 0;
-  background-color: hsl(0, 0%, 98%);
+  background-color: grey;
   color:#333;
   font: 100% / normal "Xanh Mono", sans-serif;
 }
@@ -21,18 +21,28 @@ form{
   background-color: white;
   border: 4px solid white;
   display: grid;
+  /* two columns */
   grid-template-columns: 1fr 1fr;
+  /* gap between the columns */
   gap: 2rem;
 }
-
+/* Make the border red in case of invalid value */
+/* input:invalid{
+  border: 2px solid red;
+} */
 .full-width{
+  /* Make elements match the full-width class span 2 columns */
   grid-column: span 2;
-  font: 1.25em/ 1.5 "Xanh Mono", sans-serif;
-  display: block;
+}
+input[type="text"],
+input[type="email"],
+select,
+textarea
+{
+  font:1.25em/ 1.5 "Xanh Mono", sans-serif;
+  display:block;
   box-sizing: border-box;
   width: 100%;
-  padding: 0.5em 0.75em;
-}
-input:invalid{
-  border: 2px solid red;
+  padding:0.5em 0.75em;
+
 }

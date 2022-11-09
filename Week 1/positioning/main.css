@@ -1,0 +1,18 @@
+.container {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container,
+.notification {
+  padding: 16px;
+}
+
+.notification {
+  height: 80px;
+  border-radius: 10px;
+  background-color: red;
+}
+
+.close {
+  font-size: 16px;
+}

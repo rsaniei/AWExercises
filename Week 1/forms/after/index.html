@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CSS Form</title>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <bod>
+    <main>
+      <form action="/" method="post">
+        <div>
+          <label for="nameId">User Name (*)</label>
+          <!-- It is requiered! You have to submit it. -->
+          <input type= "name" id="nameId" name="user_name" required placeholder="your name here">
+        </div>
+
+        <div>
+          <label for="passwordId">Password (*)</label>
+          <!-- It is requiered! You have to submit it. -->
+          <input type="password" id="passwordId" name="user_password" required>
+        </div>
+
+        <div>
+          <!-- It should follow the email format. If not, you cannot submit the from -->
+          <label for="emailId">Email (*)</label>
+          <!-- It is requiered! You have to submit it. -->
+          <input type="email" id="emailId" name="user_email" required>
+        </div>
+
+        <div>
+          <label for="messageId">Your message</label>
+          <textarea id="messageId" name="user_message"></textarea>
+        </div>
+
+        <fieldset>
+          <!-- you can put the radio buttons in a list -->
+
+          <legend>Your favorite music:</legend>
+
+          <input type="radio" id="item1" name="music_choice" value="jazz" checked>
+          <label for="item1">Jazz</label>
+
+          <input type="radio" id="item2" name="music_choice" value="Pop">
+          <label for="item2">Pop</label>
+
+          <input type="radio" id="item3" name="music_choice" value="Country">
+          <label for="item3">Country</label>
+
+          <input type="radio" id="item4" name="music_choice" value="other">
+          <label for="item4"Other>Other</label>
+        </fieldset>
+
+        <div>
+          <fieldset>
+            <!-- you can put the checklist items in a list -->
+
+            <legend>Your favorite music:</legend>
+
+            <!-- pre checked option -->
+            <input type="checkbox" id="fitem1" name="food_choice" value="pizza" checked>
+            <label for="fitem1">Pizza</label>
+
+            <input type="checkbox" id="fitem2" name="food_choice" value="icecream">
+            <label for="fitem2">Ice cream</label>
+
+            <input type="checkbox" id="fitem3" name="food_choice" value="pasta">
+            <label for="fitem3">Pasta</label>
+
+            <input type="checkbox" id="fitem4" name="food_choice" value="veggi">
+            <label for=fitem4"">Veggie food</label>
+          </fieldset>
+        </div>
+
+        <div>
+          <label>Your choice:<input type="text" list="fruitList"></label>
+          <datalist id="fruitList">
+            <option>Apple</option>
+            <option>Banana</option>
+            <option>Blueberry</option>
+            <option>Orange</option>
+          </datalist>
+        </div>
+
+        <div>
+          <label for="fruitList">Your choice:</label>
+            <select id="fruitList">
+              <option>Apple</option>
+              <option>Banana</option>
+              <option>Blueberry</option>
+              <option>Orange</option>
+            </select>
+        </div>
+
+
+        <button type="submit">Submit</button>
+
+
+    </main>
+  </bod>
+</html>
