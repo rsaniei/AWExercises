@@ -1,0 +1,13 @@
+1.First add grid witth 4 column to navigation bar.
+
+2. Show the columns in dev inspector.
+   3.Explain why the li tags are not in each column (because a <ul> is their parent).
+   4.Transform the grid to the ul instead.
+   5.change li width to 80%.
+
+6.for main, display is grid with 2 columns.
+7.section width should be deleted.
+8.change ul selector to nav ul 9. change ,right ul => list-style:none; 10. play with grid size. make one of them bigger.
+9.right section => gridcolumn: span 2;
+
+gap for main element.
