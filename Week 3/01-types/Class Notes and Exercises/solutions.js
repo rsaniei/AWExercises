@@ -1,5 +1,7 @@
 
-// function selectRandomItem(myArray){
+// //function to get elements randomely in an array
+
+//function selectRandomItem(myArray){
 
 //   let randomElement = myArray[Math.floor(Math.random()* myArray.length)];
 //   return randomElement;
@@ -9,8 +11,11 @@
 // let arr = ['January', 'February', 'March', 'April'];
 // console.log(selectRandomItem(arr));
 
-// Copy objects in Javascript
-// Using JSON.stringify and JSON.parse
+// // Copy objects in Javascript
+// // Using JSON.stringify and JSON.parse
+// // Cons: the copy is deep (of the object and the nested objects inside it)
+// // Pros: It does not copy the properties with function as their value.
+// // use lodash library instead => cloneDeep function
 
 const user = {
   name: "Ana",
