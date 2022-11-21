@@ -34,7 +34,7 @@
   //       console.log((data));
   //     })
 
-  //Third
+  // Third
   // let url = "https://api.openweatheap.org/data/2.5/weather?lat=44.34&lon=10.99&appid=0672ad160bef8b6d373d9455263f290f";
   //   fetch(url) //fetch is failed here // ok = false
   //     .then(function (response) {
@@ -68,40 +68,40 @@
 
   //Second Example
   //DOM and API
-  // let url =" https://galaxy-explorer.vercel.app/api/clusters";
+  let url =" https://galaxy-explorer.vercel.app/api/clusters";
 
-    // fetch(url) // endpoint is correct. but authentication key is not
-    //so ok = false
-      // .then(function (response) {
-      //   if(response.ok){
-      //     console.log("ok");
-      //     return response.json();
-      //   } else {
-      //     //handle status other than 2xxx //promiss is really not resolevd! obliged the fetch to accept it
-      //     return Promise.reject('something went wrong!')
-      //   }
-      // })
-      // .then(function (data) {//data is array
-      //   console.log(data);
-      // //  showElements(data);
-        // let myUl = document.createElement('ul');
-        // // for (let item of data) {
-        //   data.forEach(Item =>{
-        //     let myLi = document.createElement('li');
-        //     myLi.innerHTML = Item;
-        //     myUl.append(myLi);
+    fetch(url) // endpoint is correct. but authentication key is not
+    // so ok = false
+      .then(function (response) {
+        if(response.ok){
+          console.log("ok");
+          return response.json();
+        } else {
+          //handle status other than 2xxx //promiss is really not resolevd! obliged the fetch to accept it
+          return Promise.reject('something went wrong!')
+        }
+      })
+      .then(function (data) {//data is array
+        console.log(data);
+      //  showElements(data);
+        let myUl = document.createElement('ul');
+        // for (let item of data) {
+          data.forEach(Item =>{
+            let myLi = document.createElement('li');
+            myLi.innerHTML = Item;
+            myUl.append(myLi);
 
-        //   });
+          });
 
-        // // }
-        // document.body.append(myUl);
+        // }
+        document.body.append(myUl);
 
-      // }
-      // )
-      // .catch( function (error) {//like the else step. catch th erro
-      //   console.log('error ' + error);
+      }
+      )
+      .catch( function (error) {//like the else step. catch th erro
+        console.log('error ' + error);
 
-      // });
+      });
 
     function showElements(data)
     {
