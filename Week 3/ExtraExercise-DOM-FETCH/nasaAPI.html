@@ -1,0 +1,45 @@
+
+
+<!-- use the Fetch API to get data from
+  the NASA Astronomy Picture of the Day (APOD) API (https://api.nasa.gov/)
+  and display it on the browser. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>NASA's Astronomy Picture of the Day</title>
+
+</head>
+
+<body>
+  <main class="container">
+    <h1>NASA's Astronomy Picture of the Day</h1>
+    <h2 id="title"></h2>
+    <p id="date"></p>
+    <section class="picture-explanation-container">
+      <img src="" id="picture" alt="astronomy image by NASA" />
+      <p id="explanation"></p>
+    </section>
+  </main>
+
+
+  <script>
+    const url = "https://api.nasa.gov/planetary/apod?api_key=";
+    //Get Free API KEY from https://api.nasa.gov/
+    const api_key = "YOUR_API_KEY";
+
+const fetchNASAData = async () => {
+
+};
+
+const displayData = (data) => {
+
+};
+
+fetchNASAData();
+  </script>
+</body>
+
+</html>
