@@ -1,4 +1,16 @@
-question 3:let obj: any = { x: 0 };
+Question1:What will be the output of the followinf lines of code?think and discuss first before writing this code
+
+const message = "hello!";
+message();
+
+Question2:What will be the output?
+
+function greet(person, date) {
+ console.log(`Hello ${person}, today is ${date}!`);
+}
+greet("Brendan");
+
+Question 3:let obj: any = { x: 0 };
 Uncomment the code below and see if the complier throws an error or not
 //obj.foo();
 //obj();
