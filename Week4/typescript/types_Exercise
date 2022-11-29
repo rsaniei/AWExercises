@@ -1,0 +1,7 @@
+question 3:let obj: any = { x: 0 };
+Uncomment the code below and see if the complier throws an error or not
+//obj.foo();
+//obj();
+//obj.bar = 100;
+//obj = "hello";
+//const n: number = obj;
