@@ -24,7 +24,8 @@ let ----:---- = "Dylan";
 
  Question9:What will be the output of the followinf lines of code?think and discuss first before writing this code
 
-
+const message = "hello!";
+message();
 Question10:What will be the output?
 
 function greet(person, date) {
