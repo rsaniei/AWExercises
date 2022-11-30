@@ -1,12 +1,8 @@
-<<<<<<< HEAD
-// Question1:What will be the output of the followinf lines of code?
-// think and discuss first before writing this code
-=======
 Question1:TypeScript allows developers to add ------------- to JavaScript.
 
 Question2:JavaScript is a loosely typed language.
 
-Question3:The TypeScript compiler can be configured with which file? 
+Question3:The TypeScript compiler can be configured with which file?
 -------.json
 
 Question4:There are two main ways TypeScript assigns a type:
@@ -20,36 +16,24 @@ let -----   = "Dylan";
 Question6:Create a "firstName" variable, string type using Explicit type:
 
 let ----:---- = "Dylan";
- 
+
  Question7:Create an empty "myVar" variable, and disable type checking:
- 
- 
+
+
  Question8:Create an empty "myVar" variable, and specify it should be an unknown type:
- 
+
  Question9:What will be the output of the followinf lines of code?think and discuss first before writing this code
->>>>>>> 9268012d144f8719ecc77e205d42b8d502c7ea6d
 
-const message = "hello!";
-message();
 
-<<<<<<< HEAD
-// Question2:What will be the output?
-=======
 Question10:What will be the output?
->>>>>>> 9268012d144f8719ecc77e205d42b8d502c7ea6d
 
 function greet(person, date) {
  console.log(`Hello ${person}, today is ${date}!`);
 }
 greet("Brendan");
 
-<<<<<<< HEAD
-// Question 3:let obj: any = { x: 0 };
-// Uncomment the code below and see if the complier throws an error or not
-=======
 Question 11:let obj: any = { x: 0 };
 Uncomment the code below and see if the complier throws an error or not
->>>>>>> 9268012d144f8719ecc77e205d42b8d502c7ea6d
 //obj.foo();
 //obj();
 //obj.bar = 100;
@@ -57,15 +41,9 @@ Uncomment the code below and see if the complier throws an error or not
 //const n: number = obj;
 
 
-<<<<<<< HEAD
-// QUestion4:Add a strict null check for this piece of code
-// Declare const loggedInUsername: string;
-
-=======
 QUestion12:Add a strict null check for this piece of code
 Declare const loggedInUsername: string;
- 
->>>>>>> 9268012d144f8719ecc77e205d42b8d502c7ea6d
+
 const users = [
   { name: "Oby", age: 12 },
   { name: "Heera", age: 32 },
