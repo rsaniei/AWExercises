@@ -1,13 +1,13 @@
-Question1:TypeScript allows developers to add ------------- to JavaScript.
+Question1:TypeScript allows developers to add types to JavaScript.
 
 Question2:JavaScript is a loosely typed language.
 
 Question3:The TypeScript compiler can be configured with which file?
--------.json
+tsconfig.json
 
 Question4:There are two main ways TypeScript assigns a type:
-1:
-2:
+1:Implicit
+2:Explicit
 
 Question5:Create a "firstName" variable, string type using Implicit type:
 
