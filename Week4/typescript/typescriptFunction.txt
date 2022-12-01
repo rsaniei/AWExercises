@@ -25,6 +25,11 @@ b.milesToMars is a number with the value of kilometersToMars * milesPerKilometer
 c.hoursToMars is a number with the value of milesToMars / speedMph.
 d.daysToMars is a number with the value of hoursToMars / 24.
 
+Answer:
+Determination would take 332.67857142857144 days to get to Mars.
+
+
+28.7.4. Part 3 - Create a Function
 
 2.Write a console.log statement that prints out the days to Mars.
   a. Use template literal syntax and the variables ${spacecraftName} and ${daysToMars}.
@@ -46,6 +51,10 @@ b.Refactor the template literal to use ${getDaysToLocation(kilometersToMars)} an
 3.Print out the days to the Moon.
 a.Add another output statement and template literal using ${getDaysToLocation(kilometersToTheMoon)} and ${spacecraftName}.
 
+Answer:
+Determination would take 332.67857142857144 days to get to Mars.
+   Determination would take 0.5683628571428571 days to get to the Moon.
+   
 Question3:Create a function that specifically does not return a value
 
 Question4:Create a function with 2 parameters (myVar1 and myVar2), that are both strings
