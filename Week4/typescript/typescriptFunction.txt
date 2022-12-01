@@ -25,14 +25,12 @@ b.milesToMars is a number with the value of kilometersToMars * milesPerKilometer
 c.hoursToMars is a number with the value of milesToMars / speedMph.
 d.daysToMars is a number with the value of hoursToMars / 24.
 
-Answer:
-Determination would take 332.67857142857144 days to get to Mars.
 
-
-28.7.4. Part 3 - Create a Function
 
 2.Write a console.log statement that prints out the days to Mars.
   a. Use template literal syntax and the variables ${spacecraftName} and ${daysToMars}.
+Answer:
+Determination would take 332.67857142857144 days to get to Mars.
 
 Part3.Create a Function :
 
