@@ -52,3 +52,6 @@ Question4:Create a function with 2 parameters (myVar1 and myVar2), that are both
 
 Question5:Create a function with 2 parameters (myVar1 and myVar2,in that order), that are both strings.
 Specify that myVar2 should be optional
+
+Question6:Prevent the array from being changed:
+const names: readonly string[] = ["Dylan"];
