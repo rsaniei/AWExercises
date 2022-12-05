@@ -46,11 +46,13 @@ class Person {
 }
 
  }
-Question4:Create a interface for Subject with the basic info that a Subject has to contain like Name, Code and Description
+ Question4:Create a class circle and add a static member field pi and calculate the area of a circle with a static method.
+ 
+Question5:Create a interface for Subject with the basic info that a Subject has to contain like Name, Code and Description
 Create a list of subjects based on the interface
 Create a method to show the list that you just created
 
-Question5:Create a Class for Suject that implement the interface create in the last question
+Question6:Create a Class for Suject that implement the interface create in the last question
 Implement 2 constructors
 One that not receive any parameters
 Other that receive as parameter “Name”, “Code”, “Description”, assigning those parameters to the field in the class.
