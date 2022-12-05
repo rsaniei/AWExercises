@@ -46,3 +46,6 @@ class Person {
 }
 
  }
+Question4:Create a interface for Subject with the basic info that a Subject has to contain like Name, Code and Description
+Create a list of subjects based on the interface
+Create a method to show the list that you just created
