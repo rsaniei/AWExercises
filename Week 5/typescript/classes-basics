@@ -29,3 +29,9 @@ class Person {
   return this.name;
  }
 }
+
+Question3:TypeScript provides a convenient way to define class members in the constructor, by adding a visibility modifiers to the parameter.
+
+Example
+class Person {
+ }
