@@ -53,31 +53,31 @@ catch (e) {
 console.log("Here I am after error");
 
 ////Returning Exception
-// class InvalidDateFormatError extends RangeError {}
-// class DateIsInTheFutureError extends RangeError {}
+class InvalidDateFormatError extends RangeError {}
+class DateIsInTheFutureError extends RangeError {}
 
-// function parse( birthday: string): Date | InvalidDateFormatError | DateIsInTheFutureError {
+function parse( birthday: string): Date | InvalidDateFormatError | DateIsInTheFutureError {
 
-//     let date = new Date(birthday)
-//     if (!isValid(date)) {
-//         return new InvalidDateFormatError('Enter a date in the form YYYY/MM/DD')
-// }
-//     if (date.getTime() > Date.now()) {
-//         return new DateIsInTheFutureError('Are you a timelord?')
-// }
-//     return date
-// }
+    let date = new Date(birthday)
+    if (!isValid(date)) {
+        return new InvalidDateFormatError('Enter a date in the form YYYY/MM/DD')
+}
+    if (date.getTime() > Date.now()) {
+        return new DateIsInTheFutureError('Are you a timelord?')
+}
+    return date
+}
 
-// let result = parse(ask()) // Either a date or an error
+let result = parse(ask()) // Either a date or an error
 
-// if (result instanceof InvalidDateFormatError) {
-//     console.error(result.message)
-// } else if (result instanceof DateIsInTheFutureError) {
-//     console.info(result.message) }else{
-//     console.info('Date is', result.toISOString())
-// }
+if (result instanceof InvalidDateFormatError) {
+    console.error(result.message)
+} else if (result instanceof DateIsInTheFutureError) {
+    console.info(result.message) }else{
+    console.info('Date is', result.toISOString())
+}
 
-// console.log("Here I am after error");
+console.log("Here I am after error");
 
 
 //Examples
