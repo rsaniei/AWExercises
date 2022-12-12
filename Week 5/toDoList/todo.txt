@@ -18,7 +18,7 @@ npx create-snowpack-app . --template @snowpack/app-template-blank-typescript --f
 //getQuotes should get the txt file using axios and save the resulted array in
 // a variable. Then, it should find all of the quotes which has the same author as "author".
 //For example:
-// function getRandomQuotes("Thomas Edison") // returns an array with length = 5. the first item in the array is:
+// getRandomQuotes("Thomas Edison") // returns an array with length = 5. the first item in the array is:
 
 //  {
 //    author: "Thomas Edison"

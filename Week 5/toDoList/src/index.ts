@@ -1,7 +1,8 @@
 import _ from 'lodash';
 import type {Task} from './interfaces';
 import { addListItem } from "./addListItem";
-import * as activity from './getActivities'
+import * as activity from './getActivities';
+import { getQuotes } from './getQuotes';
 
 const list = document.querySelector<HTMLUListElement>("#list");
 const form = document.querySelector<HTMLFormElement>("#new-task-form");
@@ -16,6 +17,11 @@ console.log(result);
 const activityItem = document.createElement("div");
 activityItem.innerHTML = result.activity;
 document.body.append(activityItem);
+
+
+let quotes = await getQuotes("Thomas Edison");
+console.log(quotes);
+
 
 
 
