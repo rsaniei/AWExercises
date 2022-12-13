@@ -10,3 +10,6 @@ last_name: "Smith",
 age: "38",
 department: "Software"
 };
+Question3:How do you zip a file in node.js?
+Node.js provides Zlib module to zip a file.
+var zlib = require('zlib');
