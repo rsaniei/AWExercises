@@ -7,18 +7,22 @@
   <title>Document</title>
 </head>
 <body>
-  <h2>Hello! You are in index file!</h2>
-  <h3><%=name %>, you created me!</h3>
-  <h3> </h3>
-  <% for(let i = 0; i<length; i++){ %>
-      <p> I will repeat this 5 times!</p>
-  <% } %>
-
     <div class =container>
       <h2>A Simple ToDo List App</h2>
       <form action="http://localhost:3000/tasks" method = "POST">
         <input type = "text" name ="newtask" placeholder="add a new task">
         <button type = "submit">Add Task</button>
+      </form>
+
+      <h2>Add Task</h2>
+      <form action="http://localhost:3000/tasks">
+        <ul>
+          <% for (let i = 0; i < task.length; i++) { %>
+            <li> <input type = checkbox name=check value= <%=task[i].id %> />
+            <%= task[i].text %>
+            </li>
+          <%}%>
+        </ul>
       </form>
 
     </div>
