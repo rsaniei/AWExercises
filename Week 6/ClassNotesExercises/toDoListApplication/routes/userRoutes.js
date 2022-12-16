@@ -2,6 +2,7 @@
 const UserController = require("../controllers/UserController");
 const express = require("express");
 const bodyParser = require("body-parser");
+const { application } = require("express");
 const urlencodedParser = bodyParser.urlencoded({ extended: false });
 
 const router = express.Router();
@@ -12,5 +13,8 @@ router.get("/:id", UserController.getUserById);
 // get /login
 // post /login
 
+app.route("/deletetask/:id", ()=>{
+  //handle the delete logic
+})
 
 module.exports = router;
