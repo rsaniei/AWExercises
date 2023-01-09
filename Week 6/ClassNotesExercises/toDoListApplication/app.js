@@ -1,22 +1,36 @@
 const express = require("express");
 const static = require("serve-static");
+const mongoose = require("mongoose");
 const userRoutes = require("./routes/userRoutes");
 const taskRoutes = require("./routes/taskRoutes");
 
 const hostname = "localhost";
 const port = 3000;
 
+// Don't forget to start your Database server first!
+// on Mac using brew:
+// brew services start mongodb-community
+// Check the status to make sure the server is running
+const DB_SERVER = "mongodb://127.0.0.1:27017";
+const database = "toDoList";
+mongoose.connect(`${DB_SERVER}/${database}`)
+.then(() => {console.log("Connected to database server...");})
+.catch((err) => {console.log(err);})
+
 const app = express();
 app.use(express.json());
 app.set("view engine", "ejs");
 app.use(static(__dirname +"/public"));
 
+// app.get("/", (req, res)=>{
+//   res.sendFile("index.html");
+// })
 app.use('/tasks', taskRoutes);
 app.use('/users', userRoutes);
 
-app.get("/", (req, res)=>{
-  res.redirect("/tasks");
-})
+// app.get("/", (req, res)=>{
+//   res.redirect("/tasks");
+// })
 
 
 app.listen({path:hostname, port: port}, (error) =>{

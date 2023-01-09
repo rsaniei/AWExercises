@@ -9,7 +9,7 @@ const router = express.Router();
 
 router.get("/", UserController.getUsers);
 router.get("/:id", UserController.getUserById);
-// router.post("/",urlencodedParser, UserController.createUser); //users
+router.post("/",urlencodedParser, UserController.createUser); //users
 // get /login
 // post /login
 
