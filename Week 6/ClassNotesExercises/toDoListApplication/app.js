@@ -22,8 +22,11 @@ app.use(express.json());
 app.set("view engine", "ejs");
 app.use(static(__dirname +"/public"));
 
-// app.get("/", (req, res)=>{
-//   res.sendFile("index.html");
+// app.get("/hey", (req, res)=>{
+//   console.log("here we are");
+//   console.log("in back");
+//   const user = {name: "Ana"};
+//   res.json(user);
 // })
 app.use('/tasks', taskRoutes);
 app.use('/users', userRoutes);
