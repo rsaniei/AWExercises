@@ -20,18 +20,36 @@ function getUserById(id) {
 //this is only used cause we are not using a DB for now and we do the checks on the array users that is here
  initializePassport(passport, getUserByEmail, getUserById)
 
-  router.get('/', (req, res) => {
+  router.get('/', checkAuthenticated, (req, res) => {
     res.render('index.ejs', { name: req.user.name})
   })
 
-  router.get('/login', (req, res) => {
-    res.render('login.ejs')
+  router.get('/login', (req, res) => {//if the user is logged in, she shouldn't see the login page
+    res.render('login.ejs')//this function is implimented
   })
 
-  router.post('/login', (req, res) =>{
+  router.post('/login', passport.authenticate("local", {
+      successRedirect: '/',
+      failureRedirect: '/login', //if email is repetetive or passwordi s wrong
+      failureFlash: true
+
+  })
     //authenticate and redirect to index if true
-    res.redirect("/")
-  }
+
+    // async (req, res) =>{
+  //   const user = users.find((item) => item.emsil === req.body.email);
+  //   if(!user){
+  //     console.log("No user found with this email address!");
+  //   } else {
+  //     const found = await bcrypt.compare(req.body.password, user.passport);
+  //   }
+  //   if(!found) {
+  //     console.log("Password is incorrect!");
+  //   }
+  //   else {
+  //     res.redirect("/");
+  //   }
+  // }
   )
 
   router.get('/register', (req, res) => {
@@ -39,10 +57,19 @@ function getUserById(id) {
   })
 
   router.post('/register', async (req, res) => {
-    // register and redirect to login
-    res.redirect('/login')
-    //TODO: check if email already exists!!
 
+    //TODO: check if email already exists!!
+    const hashedPassword = bcrypt.hash(req.body.password, 10); //salt = 10
+    const user = {
+      id: Date.now().toString(), //or uuid
+      name: req.body.name,
+      email: req.body.email,
+      password: hashedPassword
+    }
+
+    users.push(user) //Users.create({}) if you use db
+    // register and redirect to login
+    res.redirect('/login');
 
   })
 
