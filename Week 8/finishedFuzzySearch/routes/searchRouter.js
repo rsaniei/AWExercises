@@ -74,8 +74,8 @@ const initializePassport = require('../config/passport-config')
   );
 
   router.get('/login', checkNotAuthenticated, (req, res) => {
-    req.flash('info', 'Please login first!');
-    res.render('login.ejs', {message: req.flash("info")})
+    // req.flash('info', 'Please login first!');
+    res.render('login.ejs', {message: req.flash("apple")})
   })
 
 
@@ -83,7 +83,7 @@ const initializePassport = require('../config/passport-config')
     if (req.isAuthenticated()) {    //a passport function
       return next();
     }
-    // req.flash('info', 'Please login first!')
+    req.flash('apple', 'Please login first!') // flash: {"apple":"Please login first! "}
     res.redirect('/login');
   }
 
