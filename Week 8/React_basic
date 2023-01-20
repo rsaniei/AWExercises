@@ -1,0 +1,3 @@
+Create a new project and add React to the project.Now create first element  i.e <h1>gettign started with react </h1> with ReacrDom.render().
+In the same file,now in reactDom.render,call a React element using a seperate variable.
+create a first component
