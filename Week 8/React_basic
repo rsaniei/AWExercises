@@ -11,3 +11,17 @@ const paragraph = React.createElement(------, {}, 'This is a paragraph without u
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(paragraph);
 Question7:create a first component named Person that will show the name of a person using props
+Question 8:Send the "brand" property from the Garage component to the Car component:
+
+function Car(props) {
+ 
+}
+
+function Garage() {
+  return (
+   
+  );
+}
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<Garage />);
