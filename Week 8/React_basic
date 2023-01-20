@@ -26,7 +26,7 @@ function Garage() {
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<Garage />);
 
-Question8:
+Question9:
 Create a variable named name and pass it to the Person component.
 
 function Person(props) {
