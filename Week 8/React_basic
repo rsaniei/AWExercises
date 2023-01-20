@@ -3,7 +3,7 @@ Question2:Enter the correct ReactDOM method to render the React element to the D
 
 ReactDOM.---------(myElement, document.getElementById('root'));
 Question 3:Create a new project and add React to the project.Now create first element  i.e <h1>gettign started with react </h1> with ReacrDom.render().
-Question4:Create a variable that contains HTML code e.g create a table with some rows and columns and display it in the "root" node:
+Question4:Create a variable that contains HTML code e.g create a table with some rows and columns and display it in the "root" node using ReactDom.render()
 
 Question5:In the same file,now in reactDom.render,call a React element using a seperate variable.
 Question6:Execute the expression 5 + 5: using JSX
