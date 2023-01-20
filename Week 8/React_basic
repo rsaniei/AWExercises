@@ -10,4 +10,4 @@ Render a <p> element without using JSX.
 const paragraph = React.createElement(------, {}, 'This is a paragraph without using JSX!');
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(paragraph);
-Question7:create a first component
+Question7:create a first component named Person that will show the name of a person using props
