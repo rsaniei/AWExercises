@@ -19,7 +19,7 @@ https://www.browserstack.com/guide/inspect-element-in-chrome
 Exercise2:Mapping Through A List And Rendering (With A Custom Component)
 we mentioned that part of what makes React so great is that it allows us to create our custom, re-usable components.
 
-You only created a custom button there. This time, you'll create a custom component that displays each item from exercise 5:
+You only created a custom button there. This time, you'll create a custom component that displays each item from List:
 
 ['dog', 'cat', 'chicken', 'cow', 'sheep', 'horse']
 
