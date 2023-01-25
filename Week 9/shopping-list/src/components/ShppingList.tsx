@@ -3,25 +3,33 @@ import React from 'react'
 type ShoppingListProps = {
   items:
   {
-  item: string,
+  id: number,
+  name: string,
   count?: number
   }[]
 }
 
+//1
+//not working when we don't use states
+let quantity = 0;
+// setInterval(() =>{
+//   quantity++;
+//   console.log(quantity);
+// }, 1000) //each second update the quantity
+
 export const ShoppingList = ({items}: ShoppingListProps) => {
+
   return (
-    <div>
+    <div className="list">
       <ul>
         {
         items.map((item) =>
-        <li>
-         <span style = {{paddingRight: "5px"}}>{item.item}</span>
-         <span>{item.count ? item.count : 0}</span>
+        <li className="shoppingItem">
+            <span style = {{paddingRight: "5px", fontSize: "20px"}}>{item.name} : {quantity}</span>
         </li>
             )
         }
       </ul>
-
     </div>
   )
 }
