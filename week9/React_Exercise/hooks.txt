@@ -38,7 +38,7 @@ Helpful links:
 
 JSON:https://www.w3schools.com/js/js_json_intro.asp
 Flexbox:https://css-tricks.com/snippets/css/a-guide-to-flexbox/
-
+Exercise2:
  Working with an API
 Every React or any frontend developer must learn how to work with an API. When building applications, you receive data from the backend or an outside source which you will have to present nicely in the UI.
 
