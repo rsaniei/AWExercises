@@ -4,24 +4,24 @@ import ShoppingListc from './components/ShoppingListc';
 import {Clock} from './components/Clock'
 import { Container } from './components/Container';
 import LifecycleA from './components/LifeCycleA'
-import styles from './App';
+import './App.css';
 
 function App() {
 
   const itemsList = [
     {
-      id:1,
+      id:0,
       name: "milk",
-      count: 2
+      count: 3
     },
      {
-      id:2,
+      id:1,
       name: "egg",
       count: 1
 
     },
      {
-      id:3,
+      id:2,
       name: "rice",
       count: 3
     }
@@ -33,7 +33,12 @@ function App() {
     //   <ShoppingListc items = {itemsList}></ShoppingListc>
     // </Container>
     // <LifecycleA></LifecycleA>
-    <Clock></Clock>
+    // <Clock></Clock>
+    <div className='App'>
+      <Container >
+    <ShoppingList items= {itemsList}></ShoppingList>
+    </Container>
+    </div>
   );
 }
 
