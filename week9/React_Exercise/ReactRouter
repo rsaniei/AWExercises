@@ -1,0 +1,16 @@
+To create an application with multiple page routes, let's first start with the file structure.
+
+Within the src folder, we'll create a folder named pages with several files:
+
+src\pages\:(your folder structure will depend on your own local path)
+
+Layout.js
+Home.js
+Blogs.js
+Contact.js
+NoPage.js
+Each file will contain a very basic React component.
+
+Now we will use our Router in our index.js file.
+Use React Router to route to pages based on URL
+
