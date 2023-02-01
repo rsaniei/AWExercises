@@ -14,3 +14,7 @@ Each file will contain a very basic React component.
 Now we will use our Router in our index.js file.
 Use React Router to route to pages based on URL
 
+Challenge2:
+Update todo list to add seprate pages i.e Home page that can have some dummy data and then addtaskpage(only to add new tasks),taskListpage(list of all the tasks)
+and use REACT Router to route between the pages 
+
