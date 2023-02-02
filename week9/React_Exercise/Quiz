@@ -8,7 +8,7 @@ hello =-------- "Hello World!";
 Question3:Create a variable that cannot be changed.
 ------- x = 5.6;
 Question4:Complete the array method that will allow you to run a function on each item in the array and return a new array.
-const myList = myArray.map((item) => <p>{item}</p>)
+const myList = myArray.-------((item) => <p>{item}</p>)
 
 Question5:Add the following CSS styles inline to the <h1> element   color = "purple"
 const Header = () => {
