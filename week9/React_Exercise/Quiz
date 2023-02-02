@@ -27,5 +27,8 @@ Question7:Import the App.css file in order to include its styles in the current 
 
 Question8:Name this CSS file so that it can be imported as a Module.
 header.-----------.css:
+Note:
+Now Goto the following  link and solve each exercise one by one in codepen
+https://dev.to/frontendengineer/10-reactjs-coding-exercises-with-codepen-exercise-and-solution--22k7
 
-Note:complete the exercises in ReactRouter slides
+Next:complete the exercises in ReactRouter slides
