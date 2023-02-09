@@ -5,12 +5,15 @@ import "./index.css";
 import RenderCounter from "./pages/RenderCounter";
 import LoadContextProvider from "./LoadContext";
 import ImageToggleOnMouseOver from "./components/ImageToggleOnMouseOver";
+import Audio from "./components/Audio";
+import ToggleTheme from "./components/ToggleTheme";
 
 ReactDOM.render(
-  <ImageToggleOnMouseOver
-    primaryImage="./static/student.jpeg"
-    secondaryImage="./static/bw/student.jpeg"
-  ></ImageToggleOnMouseOver>,
+  <ToggleTheme />,
+  // <ImageToggleOnMouseOver
+  //   primaryImage="./static/student.jpeg"
+  //   secondaryImage="./static/bw/student.jpeg"
+  // ></ImageToggleOnMouseOver>,
   // <RenderCounter></RenderCounter>,
   // <LoadContextProvider>
   //   <App />
