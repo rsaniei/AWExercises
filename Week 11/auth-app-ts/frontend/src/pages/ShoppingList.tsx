@@ -112,6 +112,7 @@ function ShoppingList() {
             name="task"
             value={task}
             onChange={(e) => setTask(e.target.value)}
+            style={{ padding: "10px 20px", marginLeft: "10px" }}
           />
         </label>
         {/* <input
@@ -120,7 +121,9 @@ function ShoppingList() {
           value={image}
           onChange={(e) => setImage(e.target.value)}
         /> */}
-        <button type="submit">Add!</button>
+        <MyButton color="green" text="Add" type="submit">
+          Add!
+        </MyButton>
       </form>
 
       <br />

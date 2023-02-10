@@ -8,6 +8,8 @@ import Register from "./pages/Register";
 import { RequiredAuth } from "./RequiredAuth";
 import PrivatePage from "./pages/PrivatePage";
 import { useLoader } from "./LoadContext";
+import Clock from "./components/Clock";
+import Footer from "./components/Footer";
 
 //import { RequireAuth } from './RequireAuth';
 
@@ -44,8 +46,10 @@ function App() {
 
               <Route path="/login" element={<Login />} />
               <Route path="/register" element={<Register />} />
+              <Route path="/timer" element={<Clock />} />
             </Routes>
           </main>
+          <Footer />
         </Router>
       )}
     </AuthenticationProvider>

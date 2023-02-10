@@ -1,5 +1,6 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import { useAuthentication } from "../AuthenticationProvider";
+import "./Header.css";
 
 const Header = () => {
   const result = useAuthentication();
@@ -8,18 +9,23 @@ const Header = () => {
   return (
     <header>
       <nav>
-        <ul>
+        <ul className="fixed-header">
           {authData?.name ? (
-            <li>
-              <NavLink to="/">Shopping List</NavLink>
-            </li>
+            <>
+              <li className="listitem">
+                <NavLink to="/">Shopping List</NavLink>
+              </li>
+            </>
           ) : (
             <>
-              <li>
+              <li className="listitem">
                 <NavLink to="/login">Login</NavLink>
               </li>
-              <li>
+              <li className="listitem">
                 <NavLink to="/register">Register</NavLink>
+              </li>
+              <li className="listitem">
+                <NavLink to="/timer">Timer</NavLink>
               </li>
             </>
           )}

@@ -9,14 +9,14 @@ import Audio from "./components/Audio";
 import ToggleTheme from "./components/ToggleTheme";
 
 ReactDOM.render(
-  <ToggleTheme />,
+  // <ToggleTheme />,
   // <ImageToggleOnMouseOver
   //   primaryImage="./static/student.jpeg"
   //   secondaryImage="./static/bw/student.jpeg"
   // ></ImageToggleOnMouseOver>,
   // <RenderCounter></RenderCounter>,
   // <LoadContextProvider>
-  //   <App />
+  <App />,
   // </LoadContextProvider>,
   document.getElementById("root")
 );
