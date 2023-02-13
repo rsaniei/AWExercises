@@ -1,4 +1,4 @@
-const sumArray = require('./index')
+const sumArray = require('./sumOfArray')
 
 describe("testing sumArray function", () => {
 
