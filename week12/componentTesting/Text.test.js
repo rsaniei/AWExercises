@@ -13,21 +13,21 @@ describe("Text Component" ,() => {
 
 	// Test 1
 	test("Text Rendering", () => {
-		render(<Text toggle={true} displayTxt={"GeeksForGeeks"}/>);
+		render(<Text toggle={true} displayTxt={"Welcome to the world of testn"}/>);
 		const text = screen.getByTestId("text");
 		expect(text).toBeInTheDocument();
 	})
 
 	// Test 2
 	test("Displayed Text when toggle is set to true", () => {
-		render(<Text toggle={true} displayTxt={"GeeksForGeeks"}/>)
+		render(<Text toggle={true} displayTxt={"Welcome to the world of testn"}/>)
 		const text = screen.getByTestId("text");
 		expect(text).toHaveTextContent("GeeksForGeeks");
 	})
 
 	// Test 3
 	test("Displayed Text when toggle is set to false", () => {
-		render(<Text toggle={false} displayTxt={"GeeksForGeeks"}/>);
+		render(<Text toggle={false} displayTxt={"Welcome to the world of testn"}/>);
 		const text = screen.getByTestId("text");
 		expect(text).toBeEmptyDOMElement();
 	})
