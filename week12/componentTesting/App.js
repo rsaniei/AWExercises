@@ -7,7 +7,7 @@ const [toggle, setToggle] = useState(true);
 
 return (
 	<div className="App">
-	<Text toggle={toggle} displayTxt="GeeksForGeeks"/>
+	<Text toggle={toggle} displayTxt="Welcome to the world of testing"/>
 	<Button setToggle={setToggle} btnTxt="Toggle Text"/>
 	</div>
 );
