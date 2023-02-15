@@ -1,0 +1,4 @@
+For add input
+Assert 
+1.It should render input element
+2.should be able to type into input "/Add a new task here.."
