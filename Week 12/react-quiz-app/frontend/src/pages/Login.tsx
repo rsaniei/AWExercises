@@ -17,7 +17,10 @@ export default function Login() {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email, password }),
     };
-    fetch("users/login", requestOption)
+    fetch(
+      "https://simple-server-rsaniei1991.vercel.app/users/login",
+      requestOption
+    )
       .then((response) => {
         if (response.status !== 200) {
           throw new Error(response.statusText);

@@ -73,7 +73,10 @@ function Quiz() {
       headers: { "Content-Type": "application/json" },
       credentials: "include",
     };
-    fetch("/users/logout", requestOptions)
+    fetch(
+      "https://simple-server-rsaniei1991.vercel.app/users/logout",
+      requestOptions
+    )
       .then((response) => {
         response.json();
       })
