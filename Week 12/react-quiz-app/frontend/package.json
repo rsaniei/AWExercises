@@ -2,7 +2,7 @@
   "name": "react-quiz-app",
   "version": "0.1.0",
   "private": true,
-  "proxy": "https://b-quiz-app-rsaniei1991.vercel.app/",
+  "homepage": "https://simple-server-rsaniei1991.vercel.app/",
   "dependencies": {
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
