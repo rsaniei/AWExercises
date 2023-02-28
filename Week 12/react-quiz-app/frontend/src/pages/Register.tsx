@@ -9,7 +9,7 @@ export default function Register() {
   const [email, setEmail] = useState("");
   const navigate = useNavigate();
   const generalContext = useLoader();
-  const BASE_URL = "https://simple-server-rsaniei1991.vercel.app/";
+  // const BASE_URL = "https://simple-server-rsaniei1991.vercel.app/";
   function submitHandler(event: React.MouseEvent<HTMLButtonElement>) {
     event.preventDefault();
     const requestOption = {
@@ -17,10 +17,7 @@ export default function Register() {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ name, email, password }),
     };
-    fetch(
-      "https://simple-server-rsaniei1991.vercel.app/users/register",
-      requestOption
-    )
+    fetch("users/register", requestOption)
       .then((response) => {
         if (response.status === 200) navigate("/quiz", { replace: true });
         return response.json();

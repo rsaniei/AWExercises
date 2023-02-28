@@ -1,7 +1,8 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const dotenv= require('dotenv');
-const app = express();
+const cors = require("cors");
+
 const session = require('express-session');
 const MongoStore = require('connect-mongo')
 const initializePassport = require('./config/passport-config');
@@ -9,12 +10,18 @@ const passport = require('passport');
 const authRouter = require('./routes/authRoutes')
 const errorHandler = require('./middleware/errorhandler')
 
+const app = express();
 initializePassport(passport)
 dotenv.config();
+const port= process.env.PORT || 5000;
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static("build"));
+}
+
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
+app.use(cors());
 mongoose.set('strictQuery', true);
-
 const sessionStore = new MongoStore({
   mongoUrl: process.env.MONGO_DB,
   collection: "sessions"
@@ -63,4 +70,4 @@ mongoose.connect(process.env.MONGO_DB, {useNewUrlParser: true})
   console.log("Database connection error!");
   console.log(err);
 })
-const port= process.env.PORT || 5000;
+module.exports= app;

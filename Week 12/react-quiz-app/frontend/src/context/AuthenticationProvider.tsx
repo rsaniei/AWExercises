@@ -19,16 +19,13 @@ export default function AuthenticationProvider({ children }: PropsType) {
 
   useEffect(() => {
     const getLoggedInUser = async () => {
-      const response = await fetch(
-        "https://simple-server-rsaniei1991.vercel.app/users",
-        {
-          method: "GET",
-          credentials: "include",
-          headers: {
-            Accept: "application/json",
-          },
-        }
-      );
+      const response = await fetch("/users", {
+        method: "GET",
+        credentials: "include",
+        headers: {
+          Accept: "application/json",
+        },
+      });
       try {
         if (response.ok) {
           const data = await response.json();
