@@ -12,7 +12,8 @@ const Movies = require("../models/movies");
       'index': 'movies-autocomplete',
       'autocomplete': {
         'query': searchQuery,
-        'path': 'title'
+        'path': 'title',
+        'fuzzy': {}
       }
     }
   },
