@@ -7,7 +7,8 @@ const session = require('express-session');
 const MongoStore = require('connect-mongo')
 const initializePassport = require('./config/passport-config');
 const passport = require('passport');
-const authRouter = require('./routes/authRoutes')
+const authRouter = require('./routes/authRoutes');
+const searchRouter= require('./routes/searchRoutes')
 const errorHandler = require('./middleware/errorhandler')
 
 const app = express();
@@ -47,6 +48,7 @@ app.use((req, res, next)=>{
 })
 
 app.use('/users', authRouter)
+app.use('/search',searchRouter )
 app.use(errorHandler)
 
 // app.get('/', (req,res)=>{

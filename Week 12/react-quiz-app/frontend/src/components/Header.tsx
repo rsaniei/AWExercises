@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import "./Header.css";
-
+import AutoComplete from "./AutoComplete";
 export default function Header() {
   return (
     <header>
