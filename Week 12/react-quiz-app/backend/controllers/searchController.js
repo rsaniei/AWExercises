@@ -13,7 +13,8 @@ const Movies = require("../models/movies");
       'autocomplete': {
         'query': searchQuery,
         'path': 'title',
-        'fuzzy': {}
+        // 'fuzzy': {}, ////uncomment for having a fuzzy search
+
       }
     }
   },
@@ -21,24 +22,16 @@ const Movies = require("../models/movies");
       {
         "$project":{
           "_id":0,
-          "title": 1,
-          "awards.wins":1,
-          // "score": { "$meta": "searchScore" }
+          "label": "$title", //change the field name to "label". Needed for MUI Autocomplete component
+
         }
       },
       {
-        "$limit": 10,
-      },
-      {
-        "$sort": {
-          "awards.wins": -1
-        }
-      }
-      ]
+        "$limit": 20,
+      }]
 
       )
       .then((result) => {
-        console.log(result);
         res.json(result);
       })
       .catch((error)=> console.log(error))
