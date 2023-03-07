@@ -10,6 +10,7 @@ import Alert from "@mui/material/Alert";
 import { useLoader } from "./context/LoadContext";
 // import AutoComplete from "./components/AutoComplete";
 import Search from "./pages/Search";
+import Posts from "./pages/BlogPosts";
 
 export default function App() {
   const generalContext = useLoader();
@@ -40,7 +41,8 @@ export default function App() {
                   </RequiredAuth>
                 }
               />
-              <Route path="search" element={<Search />}></Route>
+              <Route path="/search" element={<Search />}></Route>
+              <Route path="/posts" element={<Posts />}></Route>
               <Route path="/login" element={<Login />} />
               <Route path="/register" element={<Register />} />
             </Routes>
